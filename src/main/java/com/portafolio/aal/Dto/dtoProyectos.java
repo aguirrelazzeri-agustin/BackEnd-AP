@@ -16,28 +16,30 @@ public class dtoProyectos {
     @NotBlank
     private String descripcionP;
     @NotBlank
-    private String fechaE;
+    private String fechaP;
     @NotBlank
-    private String linkE;
+    private String linkP;
     @NotBlank
-    private String linkkE;
+    private String MateriaP;
     @NotBlank
-    private String linkkkE;
+    private String linkComP;
     
      //Constructores
 
     public dtoProyectos() {
     }
 
-    public dtoProyectos(String nombreP, String descripcionP, String fechaE, String linkE, String linkkE, String linkkkE) {
+    public dtoProyectos(String nombreP, String descripcionP, String fechaP, String linkP, String MateriaP, String linkComP) {
         this.nombreP = nombreP;
         this.descripcionP = descripcionP;
-        this.fechaE = fechaE;
-        this.linkE = linkE;
-        this.linkkE = linkkE;
-        this.linkkkE = linkkkE;
+        this.fechaP = fechaP;
+        this.linkP = linkP;
+        this.MateriaP = MateriaP;
+        this.linkComP = linkComP;
+        
     }
-       //Getters y Setters
+    
+    //geter and setter 
 
     public String getNombreP() {
         return nombreP;
@@ -55,36 +57,38 @@ public class dtoProyectos {
         this.descripcionP = descripcionP;
     }
 
-    public String getFechaE() {
-        return fechaE;
+    public String getFechaP() {
+        return fechaP;
     }
 
-    public void setFechaE(String fechaE) {
-        this.fechaE = fechaE;
+    public void setFechaP(String fechaP) {
+        this.fechaP = fechaP;
     }
 
-    public String getLinkE() {
-        return linkE;
+    public String getLinkP() {
+        return linkP;
     }
 
-    public void setLinkE(String linkE) {
-        this.linkE = linkE;
+    public void setLinkP(String linkP) {
+        this.linkP = linkP;
     }
 
-    public String getLinkkE() {
-        return linkkE;
+    public String getMateriaP() {
+        return MateriaP;
     }
 
-    public void setLinkkE(String linkkE) {
-        this.linkkE = linkkE;
+    public void setMateriaP(String MateriaP) {
+        this.MateriaP = MateriaP;
     }
 
-    public String getLinkkkE() {
-        return linkkkE;
+    public String getLinkComP() {
+        return linkComP;
     }
 
-    public void setLinkkkE(String linkkkE) {
-        this.linkkkE = linkkkE;
+    public void setLinkComP(String linkComP) {
+        this.linkComP = linkComP;
     }
     
-}
+    }
+
+   

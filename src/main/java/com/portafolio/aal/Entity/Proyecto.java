@@ -19,7 +19,6 @@ public class Proyecto {
     private String fechaP;
     private String linkP;
     private String materiaP;
-    private String integrantesP;
     private String linkComP;
     
     //Constructores
@@ -27,20 +26,20 @@ public class Proyecto {
     public Proyecto() {
     }
 
-    public Proyecto(String nombreP, String descripcionP, String fechaP, String linkP, String materiaP, String integrantesP, String linkComP) {
+    public Proyecto(String nombreP, String descripcionP, String fechaP, String linkP, String materiaP,  String linkComP) {
         this.nombreP = nombreP;
         this.descripcionP = descripcionP;
         this.fechaP = fechaP;
         this.linkP = linkP;
         this.materiaP = materiaP;
-        this.integrantesP = integrantesP;
         this.linkComP = linkComP;
     }
 
-    public Proyecto(String nombreP, String descripcionP, String fechaE, String linkE, String linkkE, String linkkkE) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-    
+
+
+   
+
+
             
 
     //Getter && Setter
@@ -93,13 +92,6 @@ public class Proyecto {
         this.materiaP = materiaP;
     }
 
-    public String getIntegrantesP() {
-        return integrantesP;
-    }
-
-    public void setIntegrantesP(String integrantesP) {
-        this.integrantesP = integrantesP;
-    }
 
     public String getLinkComP() {
         return linkComP;

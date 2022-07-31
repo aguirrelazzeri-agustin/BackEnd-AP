@@ -61,7 +61,7 @@ public class CProyectos {
         if(sProyectos.existsByNombreP(dtoproy.getNombreP()))
             return new ResponseEntity(new Mensaje("Ese proyecto existe"), HttpStatus.BAD_REQUEST);
         
-        Proyecto proyecto = new Proyecto(dtoproy.getNombreP(), dtoproy.getDescripcionP(),dtoproy.getFechaE(), dtoproy.getLinkE(), dtoproy.getLinkkE(), dtoproy.getLinkkkE());
+        Proyecto proyecto = new Proyecto(dtoproy.getNombreP(), dtoproy.getDescripcionP(),dtoproy.getFechaP(), dtoproy.getLinkP(), dtoproy.getMateriaP(), dtoproy.getLinkComP());
         sProyectos.save(proyecto);
         
         return new ResponseEntity(new Mensaje("Proyecto agregado"), HttpStatus.OK);
@@ -82,6 +82,13 @@ public class CProyectos {
         Proyecto proyecto = sProyectos.getOne(id).get();
         proyecto.setNombreP(dtoproy.getNombreP());
         proyecto.setDescripcionP((dtoproy.getDescripcionP()));
+        proyecto.setFechaP(dtoproy.getFechaP());
+        proyecto.setLinkP(dtoproy.getLinkP());
+        proyecto.setMateriaP(dtoproy.getMateriaP());
+       proyecto.setLinkComP(dtoproy.getLinkComP());
+        
+       
+        
         
         sProyectos.save(proyecto);
         return new ResponseEntity(new Mensaje("Proyecto actualizado"), HttpStatus.OK);
