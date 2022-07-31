@@ -24,7 +24,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/proy")
+@RequestMapping("/proyecto")
 @CrossOrigin(origins = "https://aalapfront.web.app/proyecto/")
 public class CProyectos {
     @Autowired
@@ -64,7 +64,7 @@ public class CProyectos {
         Proyecto proyecto = new Proyecto(dtoproy.getNombreP(), dtoproy.getDescripcionP(),dtoproy.getFechaE(), dtoproy.getLinkE(), dtoproy.getLinkkE(), dtoproy.getLinkkkE());
         sProyectos.save(proyecto);
         
-        return new ResponseEntity(new Mensaje("Proyecto agregada"), HttpStatus.OK);
+        return new ResponseEntity(new Mensaje("Proyecto agregado"), HttpStatus.OK);
     }
     
     @PutMapping("/update/{id}")
