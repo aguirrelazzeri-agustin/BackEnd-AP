@@ -25,7 +25,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/skills")
-@CrossOrigin(origins = "https://aalapfront.web.app/")
+@CrossOrigin(origins = "https://aalapfront.web.app/skills/")
 public class SkillsController {
     @Autowired
     SkillsService skillsService;
