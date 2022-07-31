@@ -23,7 +23,7 @@ public class AalApplication {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
 
-				registry.addMapping("/**").allowedOrigins("https://aalapfront.web.app/","http://localhost:4200/");
+				registry.addMapping("/**").allowedOrigins("https://aalapfront.web.app");
 			}
 		};
 	}
@@ -31,7 +31,7 @@ public class AalApplication {
 	public CorsFilter corsFilter() {
 		CorsConfiguration corsConfiguration = new CorsConfiguration();
 		corsConfiguration.setAllowCredentials(true);
-		corsConfiguration.setAllowedOrigins(Arrays.asList("https://aalapfront.web.app/","http://localhost:4200/"));
+		corsConfiguration.setAllowedOrigins(Arrays.asList("https://aalapfront.web.app"));
 
 		corsConfiguration.setAllowedHeaders(Arrays.asList("Origin", "Access-Control-Allow-Origin", "Content-Type",
 				"Accept", "Authorization", "Origin, Accept", "X-Requested-With",
