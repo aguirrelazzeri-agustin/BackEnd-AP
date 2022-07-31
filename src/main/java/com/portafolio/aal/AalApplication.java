@@ -44,6 +44,6 @@ public class AalApplication {
 		return new CorsFilter(urlBasedCorsConfigurationSource);	
 	
 	}
-
+        
 }
 
