@@ -33,7 +33,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("https://aalapfront.web.app/")
+@RequestMapping("/auth/")
 @CrossOrigin
 public class AuthController {
     @Autowired
